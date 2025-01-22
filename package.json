@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "main": "server1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server1.js",
+    "dev": "nodemon server1.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "echo 'Building backend files'",
+    "build:frontend": "echo 'Building frontend files'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
-  "description": "",
+  "description": "A hostel management system built with Express.js and EJS",
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "pg": "^8.11.3"
   }
 }
